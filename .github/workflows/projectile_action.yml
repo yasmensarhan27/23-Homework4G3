@@ -26,5 +26,5 @@ jobs:
       - name: Lint code
         run: flake8
 
-      - name: Implement code
+      - name: Implement code 
         run: python projectile_motion.py
