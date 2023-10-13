@@ -1,5 +1,4 @@
 pytest.ini
-math
 matplotlib
 numpy
 flake8
