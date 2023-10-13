@@ -3,4 +3,4 @@ matplotlib
 numpy
 flake8
 pylint
-
+math==3.10.0
