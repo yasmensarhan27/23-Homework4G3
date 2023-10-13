@@ -28,4 +28,4 @@ jobs:
         run: flake8
 
       - name: Implement code 
-        run: python projectile_motion.py
+        run: python projectile_motion.ipynb
