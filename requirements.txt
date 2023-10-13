@@ -3,5 +3,4 @@ matplotlib
 numpy
 flake8
 pylint
-math
 
