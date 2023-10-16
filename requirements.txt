@@ -1,1 +1,3 @@
 pytest
+math
+matplotlib
