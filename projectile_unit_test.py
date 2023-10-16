@@ -37,7 +37,7 @@ class TestCalculateHorizontalDistance(unittest.TestCase):
         expected_distance = 11.28  # The corrected expected result for these inputs
 
         # Calculate the actual result
-        actual_distance = calculate_horizontal_distance(x0, y0, v0, launch_angle_deg, m)
+        actual_distance = calc_xy(x0, y0, v0, launch_angle_deg, m)
 
         # Assert that the actual result matches the expected result
         self.assertAlmostEqual(actual_distance, expected_distance, places=1)
