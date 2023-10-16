@@ -21,9 +21,9 @@ jobs:
              pip install -r requirements.txt
 
       - name: Run tests
-        run: pytest -o pytest.log
+        run: pytest projectile_motion.ipynb -o pytest.log
 
       - name: Lint code
-        run: flake8 projectile.py -o pylint.log
+        run: flake8 projectile_motion.ipynb -o pylint.log
 
     
