@@ -19,7 +19,7 @@ angle = [math.radians(degrees) for degrees in angle_degree] #convert launch angl
 x_list=[] #list to store x postions
 y_list=[] #list to store y postions
 
-def calc_xy(angles, x_list, y_list, v_initital. x_start, y_start ):
+def calc_xy(angles, x_list, y_list, v_initital, x_start, y_start ):
   for j in angles: # loop over launch angles
   
     vx = v_initial*math.cos(angle[j]) # intial x velocity
