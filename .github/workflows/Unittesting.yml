@@ -10,7 +10,7 @@ jobs: # what should we do when it is run
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10 
+        python-version: 3.12.0
         pip-version: 22.0.4
     - name: Install dependencies # which libraries do we need for testing
       run: |
