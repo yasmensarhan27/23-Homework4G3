@@ -50,7 +50,8 @@ def projectile_with_drag(v_start): # Insert the starting velocity
   colours=["purple","blue","green","yellow","orange","red"] # list of colours
   plt.figure(figsize=(8,6)) # set plot size
   for i in range(len(x_list)): # plotting trajectory for each launch angle
-      plt.scatter(list(map(lambda z: z/1000, x_list[i])),list(map(lambda z: z/1000, y_list[i])), # converting from m to km
+      plt.scatter(list(map(lambda z: z/1000, x_list[i])),
+                  list(map(lambda z: z/1000, y_list[i])), # converting from m to km
                   c=colours[i],s=1,label='θ = {}°'.format(angle_degree[i])) # colours and legends
   plt.xlabel('x (km)')
   plt.ylabel('y (km)')
