@@ -1,6 +1,7 @@
+import math
+import matplotlib.pyplot as plt
 def projectile_with_drag(v_start): # Insert the starting velocity
-  import math
-  import matplotlib.pyplot as plt
+ 
 
 
   g = 9.81 # m / s^2
@@ -20,7 +21,6 @@ def projectile_with_drag(v_start): # Insert the starting velocity
   y_list=[] #list to store y postions
 
   for j in range(len(angle)): # loop over launch angles
-
     vx = v_initial*math.cos(angle[j]) # intial x velocity
     vy = v_initial*math.sin(angle[j]) # initial y velocity
 
