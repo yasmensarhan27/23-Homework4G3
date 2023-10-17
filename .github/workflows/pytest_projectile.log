@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.5, pytest-7.4.2, pluggy-1.3.0
+rootdir: /home/runner/work/23-Homework4G3/23-Homework4G3
+collected 2 items
+
+projectile_unit_test.py ..                                               [100%]
+
+============================== 2 passed in 0.78s ===============================
