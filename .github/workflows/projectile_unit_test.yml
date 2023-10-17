@@ -1,0 +1,36 @@
+name: Projectile motion with air resistance unit test
+
+on:
+  push:
+    branches: 
+      - main  # Branch to trigger the workflow on
+
+jobs:
+  test:
+    runs-on: ubuntu-latest 
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.11  #Python version
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt  
+      # This uses 'pip install numpy' to fetch specific dependencies to install.
+
+    - name: Run unit tests and save output as log file
+      run: pytest projectile_unit_test.py > pytest_projectile.log
+    - name: list directory
+      run: ls -al
+    - name: Upload log file
+      uses: actions/upload-artifact@v2
+      with:
+        name: pytest_output
+        path: pytest_projectile.log
+
+
