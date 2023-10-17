@@ -19,3 +19,5 @@ jobs: # what should we do when it is run
       run: |
         pip install pytest
         pytest test_projectile.py
+        pytest --junitxml=pytest_results.xml
+        cat pytest_results.xml > pytest_output.txt
