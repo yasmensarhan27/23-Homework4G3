@@ -24,6 +24,6 @@ jobs:
       # This uses 'pip install numpy' to fetch specific dependencies to install.
 
     - name: Run unit tests
-      run: python projectile_unit_test.py
+      run: python projectile_unit_test.py > pytest_projectile.log
 
 
