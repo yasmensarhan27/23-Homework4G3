@@ -24,7 +24,7 @@ jobs:
       # This uses 'pip install numpy' to fetch specific dependencies to install.
 
     - name: Run unit tests and save output as log file
-      run: python projectile_unit_test.py > pytest_projectile.log
+      run: pytest projectile_unit_test.py > pytest_projectile.log
     - name: list directory
       run: ls -al
     - name: Upload log file
