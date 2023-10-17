@@ -1,6 +1,8 @@
+import math
+import matplotlib.pyplot as plt
+
 def projectile_with_drag(v_start): # Insert the starting velocity
-  import math
-  import matplotlib.pyplot as plt
+ 
 
 
   g = 9.81 # m / s^2
