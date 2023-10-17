@@ -1,3 +1,4 @@
 pytest
-math
+pylint
 matplotlib
+flake8
