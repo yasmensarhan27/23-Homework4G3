@@ -24,8 +24,6 @@ jobs:
 
     - name: Run unit tests and save output as log file
       run: pytest projectile_unit_test.py > pytest_projectile.log
-    - name: list directory
-      run: ls -al
     - name: Upload log file
       uses: actions/upload-artifact@v2
       with:
