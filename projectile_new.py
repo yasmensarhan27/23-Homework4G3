@@ -20,20 +20,20 @@ def calc_xy(angles,x_list, y_list, v_initital, x_start, y_start ):
         vx = v_initial*math.cos(angle[j]) # intial x velocity
         vy = v_initial*math.sin(angle[j]) # initial y velocity
         x=[x_start] # list to store x postions
-                        y=[y_start] # list to store y postions
-                        i = 0 # index for while loop
-                        while y[-1]>=0: # loop to calculate x and y positions
-                                    x.append(x[i]+vx*dt) # calculate and save x
-                                    y.append(y[i]+vy*dt) # calculate and save y
-                                    vx=vx-const*dt*vx*math.sqrt((vx**2)+(vy**2)) # update x velocity
-                                    vy=vy-dt*(g+const*vy*math.sqrt((vx**2)+(vy**2))) # update y velocity
-                                    i=i+1 # update index   #interpolate between last two points to determine final position
-                                    r = -y[-2]/y[-1]
-                                    x[-1] = (x[-2]+r*x[-1])/(r+1)
-                                    y[-1]=0.0   # saving x and y position
-                                    x_list.append(x)
-                                    y_list.append(y)
-                        return x_list, y_list
+        y=[y_start] # list to store y postions
+        i = 0 # index for while loop
+        while y[-1]>=0: # loop to calculate x and y positions
+            x.append(x[i]+vx*dt) # calculate and save                         
+            y.append(y[i]+vy*dt) # calculate and save y
+            vx=vx-const*dt*vx*math.sqrt((vx**2)+(vy**2)) # update x velocity
+            vy=vy-dt*(g+const*vy*math.sqrt((vx**2)+(vy**2))) # update y velocity
+            i=i+1 # update index   #interpolate between last two points to determine final position
+            r = -y[-2]/y[-1]
+            x[-1] = (x[-2]+r*x[-1])/(r+1)
+            y[-1]=0.0   # saving x and y positio
+            x_list.append(x)
+            y_list.append(y)
+        return x_list, y_list
  # -------
 #plotting
 #-------
