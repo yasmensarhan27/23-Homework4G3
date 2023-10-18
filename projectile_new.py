@@ -14,12 +14,12 @@ angle_degree = [30,35,40,45,50,55] # launch angle in degree
 angle = [math.radians(degrees) for degrees in angle_degree] #convert launch angle to radians
 x_list=[] #list to store x postions
 y_list=[] #list to store y postions
-#define function to calculate 
+#define function to calculate
 def calc_xy(angles,x_list, y_list, v_initital, x_start, y_start ):
-            for j in angles: # loop over launch angles
-                        vx = v_initial*math.cos(angle[j]) # intial x velocity
-                        vy = v_initial*math.sin(angle[j]) # initial y velocity
-                        x=[x_start] # list to store x postions
+    for j in angles: # loop over launch angles
+        vx = v_initial*math.cos(angle[j]) # intial x velocity
+        vy = v_initial*math.sin(angle[j]) # initial y velocity
+        x=[x_start] # list to store x postions
                         y=[y_start] # list to store y postions
                         i = 0 # index for while loop
                         while y[-1]>=0: # loop to calculate x and y positions
