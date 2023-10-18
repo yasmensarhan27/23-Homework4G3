@@ -1,0 +1,9 @@
+[pylint]
+
+good-names=all
+max-line-length=120
+no-member-access-on-class
+
+[report]
+
+output-format=colorized
