@@ -23,11 +23,6 @@ jobs:
       # This uses 'pip install numpy' to fetch specific dependencies to install.
 
     - name: Run unit tests and save output as log file
-      run: pytest projectile_unit_test.py > pytest_projectile.log || exit 0
-    - name: Upload log file
-      uses: actions/upload-artifact@v2
-      with:
-        name: pytest_output
-        path: pytest_projectile.log
-
+      run: pytest projectile_unit_test.py 
+   
 
