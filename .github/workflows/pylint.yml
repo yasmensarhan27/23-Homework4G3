@@ -22,7 +22,7 @@ jobs:
         pip install pylint
     - name: Change linter configuration to allow lowercase names for constants
       run: |
-           echo good-names=all
+           echo good-names= g, dt, x_start
     # pylint every ".py" file in the repositiory and save the output as log file
     - name: Analysing the code with pylint
       run: |
