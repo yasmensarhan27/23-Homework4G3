@@ -2,8 +2,6 @@ name: Projectile motion with air resistance unit test
 
 on:
   push:
-    branches: 
-      - main  # Branch to trigger the workflow on
 
 jobs:
   test:
