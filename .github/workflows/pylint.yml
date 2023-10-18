@@ -24,7 +24,6 @@ jobs:
     # pylint every unit test file
     - name: Analysing the code with pylint
       run: |
-        pylint --allow-lowercase
         pylint projectile_unit_test.py 
        
 
