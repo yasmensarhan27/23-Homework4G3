@@ -20,4 +20,9 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py') > pylint_projectile.log
+    - name: Upload log file
+      uses: actions/upload-artifact@v2
+      with:
+        name: pylint_output
+        path: pylint_projectile.log
