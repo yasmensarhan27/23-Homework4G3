@@ -1,24 +1,20 @@
-
+#import the necessary libraries to run the code
 import math
 import matplotlib.pyplot as plt
-
-
+#define some constants
 g = 9.81 # m / s^2
 dt = 0.75 # time step in seconds
-
+#assign the initial x,y position indices, initial velocity and air drag constant
 x_start = 0 # starting x position
 y_start = 0 #starting y position
-
 const = 4*(10**-5) # Air Drag B_2 constant (1 / meter)
 v_initial = 700
-
-
+#list of angles
 angle_degree = [30,35,40,45,50,55] # launch angle in degree
 angle = [math.radians(degrees) for degrees in angle_degree] #convert launch angle to radians
-
 x_list=[] #list to store x postions
 y_list=[] #list to store y postions
-
+#define function to calculate 
 def calc_xy(angles,
             x_list,
             y_list,
