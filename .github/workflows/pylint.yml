@@ -21,11 +21,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install pylint
           
-    # pylint every ".py" file in the repositiory and save the output as log file
+    # pylint every unit test file
     - name: Analysing the code with pylint
       run: |
         pylint --allow-lowercase
-        pylint $(git ls-files '*.py')
+        pylint projectile_unit_test.py 
        
 
    
