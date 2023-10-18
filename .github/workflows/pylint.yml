@@ -24,7 +24,7 @@ jobs:
     # pylint every ".py" file in the repositiory and save the output as log file
     - name: Analysing the code with pylint
       run: |
-        pylint --allow-lowercase
-        pylint $(git ls-files '*.py')
+        pylint --allow-lowercase $(git ls-files '*.py')
+       
 
    
