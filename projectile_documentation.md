@@ -1,17 +1,17 @@
-# GITHUB ACTIONS:
+# Github Actions:
 **GitHub Actions is used to automate many different tasks in your software development workflow. One way to use GitHub Actions is to run Pytest and Pylint on your code.**
 
 ## Unittesting using Pytest:
-pytest is a unit testing Python framework. It helps ensure that your code is working as expected and show the time it took to run successfully. 
+`pytest` is a unit testing Python framework. It helps ensure that your code is working as expected and show the time it took to run successfully. 
 
 ## Pylinting:
-it is a linter for Python code. It checks the code for errors or enhancements.
+It is a linter for Python code. It checks the code for errors or enhancements.
 
 **To use GitHub Actions to run Pytest and Pylint, we will workflow file in your repository that defines the steps that you want to run.** 
 ## workflow file:
-we have created two yml files:
+we have created two `yml` files:
 1- unittesting:
-we used pytest action for unit testing. 
+we used `pytest` action for unit testing. 
 ```yaml
 name: Projectile motion with air resistance unit test
  #the workfolw action will run if any push was done to the main repository
@@ -56,7 +56,7 @@ jobs:
 ```
 
 
-2- Pylint.yml file to lint the code for errors
+2- `Pylint.yml` file to lint the code for errors
 **This YAML file defines a GitHub Actions workflow that runs Pylint on all Python files in the repository. The workflow is triggered whenever a push is made to the repository.**
 
 ```yaml
