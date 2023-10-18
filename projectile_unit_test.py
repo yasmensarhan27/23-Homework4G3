@@ -20,7 +20,7 @@ class TestProjectileMotion(unittest.TestCase):
         self.assertTrue(all(y) for y in y_list)
         #--------------
     #functuon to test the conversion
-    def test_degrees_to_radians_conversion(self): 
+    def test_degrees_to_radians_conversion(self):
         # Test the degrees to radians conversion function
         angle_degrees = [30, 45, 60]
         angle_radians = [math.radians(deg) for deg in angle_degrees]
