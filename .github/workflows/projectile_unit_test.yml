@@ -1,7 +1,6 @@
 name: Projectile motion with air resistance unit test
 
-on:
-  push:
+on: [push]
 
 jobs:
   test:
