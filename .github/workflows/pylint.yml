@@ -26,5 +26,5 @@ jobs:
     # pylint every ".py" file in the repositiory and save the output as log file
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylintrc $(git ls-files '*.py')
    
