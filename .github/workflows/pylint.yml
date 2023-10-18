@@ -23,15 +23,4 @@ jobs:
     # pylint every ".py" file in the repositiory and save the output as log file
     - name: Analysing the code with pylint
       run: |
-
         pylint $(git ls-files '*.py') 
-       """
-       #> pylint_output.log
-  # Upload the pylint output log as an artifact that can be downloaded from the GitHub Action page
-    #- name: Upload pylint output as artifact
-     # uses: actions/upload-artifact@v2
-      #with:
-       # name: pylint-output
-      #  path: pylint_output.log
-        """
-
