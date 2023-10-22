@@ -1,10 +1,11 @@
-import math #import the necessary libraries to run the code
+#import the necessary libraries to run the code
+import math 
 import unittest
 # Import the function you want to test from the module you created
 from projectile_new import calc_xy
 #create a class for the unittisting including 2 functions
 class TestProjectileMotion(unittest.TestCase):
-#a function to test the calculation
+#function to test the calculation
     def test_calc_xy(self):
     # Test the calc_xy function with specific inputs and expected outputs
         angles = [(math.radians(60)), (math.radians(75))]
@@ -22,7 +23,8 @@ class TestProjectileMotion(unittest.TestCase):
      # Test the degrees to radians conversion function
         angle_degrees = [60, 75, 90]
         angle_radians = [math.radians(deg) for deg in angle_degrees]
-        assert angle_radians[i] == angle_degrees[i]
+        for i in angle_radians and angle_degrees:
+            assert angle_radians[i] == angle_degrees[i]
 #----------
 if __name__ == '__main__':
     unittest.main()
