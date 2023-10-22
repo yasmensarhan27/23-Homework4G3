@@ -25,8 +25,8 @@ class TestProjectileMotion(unittest.TestCase):
         angle_degrees = [60, 75, 90]
         angle_radians = [round(math.radians(deg),1) for deg in angle_degrees]
         for i in range(angle_radians):
-            for i in range(angle_degrees):
-                assert angle_radians[i] == angle_degrees[i]
+                for i in range(angle_degrees):
+                        assert angle_radians[i] == angle_degrees[i]
 #----------
 if __name__ == '__main__':
     unittest.main()
