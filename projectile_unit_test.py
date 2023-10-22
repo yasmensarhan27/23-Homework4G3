@@ -1,5 +1,5 @@
 #import the necessary libraries to run the code
-import math 
+import math
 import unittest
 # Import the function you want to test from the module you created
 from projectile_new import calc_xy
