@@ -8,7 +8,7 @@ class TestProjectileMotion(unittest.TestCase):
 #function to test the calculation
     def test_calc_xy(self):
     # Test the calc_xy function with specific inputs and expected outputs
-        angles = [(math.radians(60)), (math.radians(75))]
+        angles = [round((math.radians(60)),1), round((math.radians(75)),1)]
         x_list, y_list = calc_xy(angles, [], [], 700, 0, 0)
         #------------
         # Check if the returned x and y lists have the expected length
@@ -22,8 +22,9 @@ class TestProjectileMotion(unittest.TestCase):
     def test_degrees_to_radians_conversion(self):
      # Test the degrees to radians conversion function
         angle_degrees = [60, 75, 90]
-        angle_radians = [math.radians(deg) for deg in angle_degrees]
-        for i in angle_radians and angle_degrees:
+        angle_radians = [round(math.radians(deg),1) for deg in angle_degrees]
+        for i in range(angle_radians):
+        for i in range(angle_degrees):
             assert angle_radians[i] == angle_degrees[i]
 #----------
 if __name__ == '__main__':
