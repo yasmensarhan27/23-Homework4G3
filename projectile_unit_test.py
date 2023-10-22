@@ -8,7 +8,7 @@ from projectile_new import calc_xy
 class TestProjectileMotion(unittest.TestCase):
     """A function to Test the calc_xy function with specific inputs and expected outputs"""
     def test_calc_xy(self):
-        angles = [int(math.radians(60)), int(math.radians(75))]
+        angles = [math.radians(60), math.radians(75)]
         x_list, y_list = calc_xy(angles, [], [], 700, 0, 0)
         #------------
         # Check if the returned x and y lists have the expected length
