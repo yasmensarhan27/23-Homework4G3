@@ -6,7 +6,7 @@ from projectile_new import calc_xy
 #create a class for the unittisting including 2 functions
 """ a class to test the projectile mition"""
 class TestProjectileMotion(unittest.TestCase):
-                """A function to Test the calc_xy function with specific inputs and expected outputs"""
+  """A function to Test the calc_xy function with specific inputs and expected outputs"""
     def test_calc_xy(self):
         angles = [int(math.radians(60)), int(math.radians(75))]
         x_list, y_list = calc_xy(angles, [], [], 700, 0, 0)
