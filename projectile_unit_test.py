@@ -23,7 +23,8 @@ class TestProjectileMotion(unittest.TestCase):
         # Test the degrees to radians conversion function
         angle_degrees = [60, 75, 90]
         angle_radians = [math.radians(deg) for deg in angle_degrees]
-        self.assertEqual(angle_radians[i], angle_degrees[i])
+        for i in angle_radians and k in angle_degrees:
+            self.assertEqual(angle_radians[i], angle_degrees[k])
 #----------
 if __name__ == '__main__':
     unittest.main()
