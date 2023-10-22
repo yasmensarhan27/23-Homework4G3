@@ -21,7 +21,7 @@ class TestProjectileMotion(unittest.TestCase):
         #--------------
     #functuon to test the conversion
         def test_degrees_to_radians_conversion(self):
-       """A function that Test the degrees to radians conversion function """
+        """A function that Test the degrees to radians conversion function """
         angle_degrees = [60, 75, 90]
         angle_radians = [round(math.radians(deg),1) for deg in angle_degrees]
         for i in range(angle_radians):
