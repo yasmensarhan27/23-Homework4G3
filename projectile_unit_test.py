@@ -2,7 +2,7 @@
 import math
 import unittest
 # Import the function you want to test from the module you created
-from projectile_new import calc_xy
+import projectile_new
 #create a class for the unittisting including 2 functions
 class TestProjectileMotion(unittest.TestCase):
     #a function to test the calculation
